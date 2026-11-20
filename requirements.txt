@@ -1,0 +1,8 @@
+# Exact versions used for the reported results (Python 3.12, CUDA 12.8 build)
+torch==2.9.1+cu128
+torchvision==0.24.1+cu128
+numpy==2.5.4
+pandas==3.1.0
+laspy==2.7.0
+matplotlib==3.11.2
+pillow==13.0.0

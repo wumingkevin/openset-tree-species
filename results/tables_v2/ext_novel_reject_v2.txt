@@ -1,0 +1,23 @@
+==============================================================================
+REJECTION ON A SPECIES ABSENT FROM THE LABEL SPACE
+==============================================================================
+external trees          : 97
+species                 : Platanus x hispanica (London plane), never in training
+threshold               : 5th percentile of the FOR validation knowns
+expected acceptance if the gate worked : about 5%
+
+detector         threshold   accept rate
+msp                  0.358         53.6%
+energy               3.296         54.6%
+mahalanobis      -3803.012          9.3%
+knn               -111.209         21.6%
+
+most frequent predictions:
+   Fagus_sylvatica              23  (24%)
+   Crataegus_monogyna           19  (20%)
+   Picea_abies                  14  (14%)
+   Carpinus_betulus             13  (13%)
+   Abies_alba                   10  (10%)
+   Betula_pendula                8  (8%)
+
+[wrote] results\tables_fix\ext_novel_reject_fix.txt

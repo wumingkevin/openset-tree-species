@@ -1,0 +1,14 @@
+{
+  "Quercus": {
+    "feasible": true,
+    "path": "splits_clean\\s5_quercus.json",
+    "known_n": 17053,
+    "unknown_n": 654,
+    "unknown_species": [
+      "Quercus_ilex",
+      "Quercus_robur",
+      "Quercus_rubra"
+    ],
+    "dropped": []
+  }
+}

@@ -1,0 +1,25 @@
+[test] 600 held-out trees, 7 conditions
+   100/600
+   200/600
+   300/600
+   400/600
+   500/600
+   600/600
+
+====================================================================
+GRADED SCANNER PROBE  (test-side degradation only)
+====================================================================
+model runs_v2\S1_seed0_f0  |  splits\S1_seed0.json fold 0
+
+condition                        n   species acc
+100% points, no noise          600         0.872
+50% points, no noise           600         0.877
+25% points, no noise           600         0.815
+10% points, no noise           600         0.652
+100% points, 1 cm noise        600         0.832
+100% points, 3 cm noise        600         0.732
+25% points, 3 cm noise         600         0.670
+
+references: in-distribution 0.821 | Belgium external 0.439 | S3 mean 0.157
+
+[wrote] results\tables_fix\scanner_probe_fix.txt

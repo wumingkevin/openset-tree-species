@@ -1,0 +1,50 @@
+==========================================================================
+S5 SPLITS  --  unknown species inside a known genus
+==========================================================================
+metadata      : data\metadata\tree_metadata_dev.csv  (17,707 trees, 25 datasets)
+rule          : keep the 2 largest species of the genus as KNOWN;
+                all other genera stay known; remaining species of the genus = UNKNOWN
+disjoint-sites: off
+
+--------------------------------------------------------------------------
+GENUS Pinus
+--------------------------------------------------------------------------
+  known species   : Pinus_sylvestris, Pinus_nigra
+  unknown species : Pinus_contorta, Pinus_resinosa, Pinus_pinaster, Pinus_radiata
+
+  known trees     : 17,017
+  unknown trees   : 690
+
+  per-unknown-species:
+    Pinus_contorta         n= 322  1 dataset(s)  overlap=0%  (site-disjoint)
+    Pinus_resinosa         n= 168  1 dataset(s)  overlap=0%  (site-disjoint)
+    Pinus_pinaster         n= 103  1 dataset(s)  overlap=100%  <-- SITE OVERLAP
+    Pinus_radiata          n=  97  1 dataset(s)  overlap=0%  (site-disjoint)
+
+  fold composition (known trees only):
+    fold 0: train 11,329  val  5,688
+    fold 1: train 11,358  val  5,659
+    fold 2: train 11,347  val  5,670
+
+  -> wrote splits\s5_pinus.json
+
+--------------------------------------------------------------------------
+GENUS Quercus
+--------------------------------------------------------------------------
+  known species   : Quercus_faginea, Quercus_petraea
+  unknown species : Quercus_ilex, Quercus_robur, Quercus_rubra
+
+  known trees     : 17,053
+  unknown trees   : 654
+
+  per-unknown-species:
+    Quercus_ilex           n= 299  1 dataset(s)  overlap=100%  <-- SITE OVERLAP
+    Quercus_robur          n= 195  8 dataset(s)  overlap=5%  <-- SITE OVERLAP
+    Quercus_rubra          n= 160  3 dataset(s)  overlap=64%  <-- SITE OVERLAP
+
+  fold composition (known trees only):
+    fold 0: train 11,365  val  5,688
+    fold 1: train 11,367  val  5,686
+    fold 2: train 11,374  val  5,679
+
+  -> wrote splits\s5_quercus.json

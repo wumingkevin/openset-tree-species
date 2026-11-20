@@ -1,0 +1,15 @@
+====================================================================
+GRADED SCANNER PROBE  (test-side degradation only)
+====================================================================
+model runs_v2\S1_seed0_f0  |  splits\S1_seed0.json fold 0
+
+condition                        n   species acc
+100% points, no noise          800         0.870
+50% points, no noise           800         0.870
+25% points, no noise           800         0.818
+10% points, no noise           800         0.659
+100% points, 1 cm noise        800         0.833
+100% points, 3 cm noise        800         0.718
+25% points, 3 cm noise         800         0.660
+
+references: in-distribution 0.821 | Belgium external 0.439 | S3 mean 0.157

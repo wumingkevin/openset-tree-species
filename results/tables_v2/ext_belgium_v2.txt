@@ -1,0 +1,31 @@
+==============================================================================
+ZERO-SHOT TRANSFER: FOR-species20K  ->  belgium_meta
+==============================================================================
+trees evaluated        : 66
+model                  : multi-view ConvNeXt-Tiny, 33 classes, no adaptation
+species accuracy       : 0.606
+genus accuracy         : 0.652
+family accuracy        : 0.667
+
+for reference, the same model on its own in-distribution split: species 0.821,
+genus 0.840, family 0.858; and on source-holdout folds: species 0.157,
+genus 0.225.
+
+------------------------------------------------------------------------------
+BY SPECIES
+------------------------------------------------------------------------------
+true                      n  species   genus  family   most predicted
+Pinus_sylvestris         30    0.933   1.000   1.000   Pinus_sylvestris(28), Pinus_nigra(2)
+Fraxinus_excelsior       16    0.000   0.062   0.062   Acer_pseudoplatanus(12), Quercus_petraea(1)
+Fagus_sylvatica          15    0.533   0.533   0.600   Fagus_sylvatica(8), Acer_pseudoplatanus(5)
+Larix_decidua             5    0.800   0.800   0.800   Larix_decidua(4), Fagus_sylvatica(1)
+
+------------------------------------------------------------------------------
+BY PLOT
+------------------------------------------------------------------------------
+plot        n  species   genus  family
+ash        16    0.000   0.062   0.062
+beech      15    0.533   0.533   0.600
+larch       5    0.800   0.800   0.800
+pine-A     15    0.933   1.000   1.000
+pine-B     15    0.933   1.000   1.000

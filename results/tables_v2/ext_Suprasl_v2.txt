@@ -1,0 +1,26 @@
+==============================================================================
+ZERO-SHOT TRANSFER: FOR-species20K  ->  meta
+==============================================================================
+trees evaluated        : 37
+model                  : multi-view ConvNeXt-Tiny, 33 classes, no adaptation
+species accuracy       : 0.649
+genus accuracy         : 0.649
+family accuracy        : 0.919
+
+for reference, the same model on its own in-distribution split: species 0.821,
+genus 0.840, family 0.858; and on source-holdout folds: species 0.157,
+genus 0.225.
+
+------------------------------------------------------------------------------
+BY SPECIES
+------------------------------------------------------------------------------
+true                      n  species   genus  family   most predicted
+Picea_abies              22    0.818   0.818   0.955   Picea_abies(18), Pinus_sylvestris(3)
+Pinus_sylvestris         15    0.400   0.400   0.867   Picea_abies(7), Pinus_sylvestris(6)
+
+------------------------------------------------------------------------------
+BY PLOT
+------------------------------------------------------------------------------
+plot        n  species   genus  family
+Rem_Suprasl_2015_4502004    2    0.000   0.000   0.500
+Rem_Suprasl_2015_4601204   35    0.686   0.686   0.943

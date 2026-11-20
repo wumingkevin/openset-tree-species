@@ -1,0 +1,28 @@
+==========================================================================
+S5 SPLITS  --  unknown species inside a known genus
+==========================================================================
+metadata      : data\metadata\tree_metadata_dev.csv  (17,707 trees, 25 datasets)
+rule          : keep the 2 largest species of the genus as KNOWN;
+                all other genera stay known; remaining species of the genus = UNKNOWN
+disjoint-sites: off
+
+--------------------------------------------------------------------------
+GENUS Quercus
+--------------------------------------------------------------------------
+  known species   : Quercus_faginea, Quercus_petraea
+  unknown species : Quercus_ilex, Quercus_robur, Quercus_rubra
+
+  known trees     : 17,053
+  unknown trees   : 654
+
+  per-unknown-species:
+    Quercus_ilex           n= 299  1 dataset(s)  overlap=100%  <-- SITE OVERLAP
+    Quercus_robur          n= 195  8 dataset(s)  overlap=5%  <-- SITE OVERLAP
+    Quercus_rubra          n= 160  3 dataset(s)  overlap=64%  <-- SITE OVERLAP
+
+  fold composition (known trees only):
+    fold 0: train 11,368  val  5,685
+    fold 1: train 11,369  val  5,684
+    fold 2: train 11,369  val  5,684
+
+  -> wrote splits_clean\s5_quercus.json

@@ -1,0 +1,79 @@
+==============================================================================
+ZERO-SHOT TRANSFER: FOR-species20K  ->  district_Milicz
+==============================================================================
+trees evaluated        : 1154
+model                  : multi-view ConvNeXt-Tiny, 33 classes, no adaptation
+species accuracy       : 0.763
+genus accuracy         : 0.763
+family accuracy        : 0.845
+
+for reference, the same model on its own in-distribution split: species 0.821,
+genus 0.840, family 0.858; and on source-holdout folds: species 0.157,
+genus 0.225.
+
+------------------------------------------------------------------------------
+BY SPECIES
+------------------------------------------------------------------------------
+true                      n  species   genus  family   most predicted
+Pinus_sylvestris        850    0.927   0.927   0.993   Pinus_sylvestris(788), Picea_abies(53)
+Quercus_robur            65    0.138   0.138   0.246   Betula_pendula(11), Fraxinus_angustifolia(9)
+Fagus_sylvatica          60    0.483   0.483   0.500   Fagus_sylvatica(29), Carpinus_betulus(5)
+Carpinus_betulus         53    0.038   0.038   0.075   Fagus_sylvatica(16), Acer_campestre(10)
+Betula_pendula           46    0.500   0.500   0.500   Betula_pendula(23), Picea_abies(8)
+Larix_decidua            35    0.200   0.200   0.943   Pinus_sylvestris(16), Picea_abies(9)
+Picea_abies              23    0.957   0.957   1.000   Picea_abies(22), Larix_decidua(1)
+Tilia_cordata            16    0.000   0.000   0.000   Picea_abies(6), Acer_campestre(3)
+Quercus_rubra             3    0.000   0.000   0.333   Acer_campestre(2), Fagus_sylvatica(1)
+Acer_campestre            2    0.500   0.500   0.500   Quercus_rubra(1), Acer_campestre(1)
+Fraxinus_excelsior        1    0.000   0.000   0.000   Betula_pendula(1)
+
+------------------------------------------------------------------------------
+BY PLOT
+------------------------------------------------------------------------------
+plot        n  species   genus  family
+Rem_Milicz_2015_1707601   25    0.840   0.840   0.880
+Rem_Milicz_2015_2006301   18    1.000   1.000   1.000
+Rem_Milicz_2015_2105901   20    0.950   0.950   1.000
+Rem_Milicz_2015_2204901   33    1.000   1.000   1.000
+Rem_Milicz_2015_2303101   40    0.850   0.850   0.900
+Rem_Milicz_2015_2406101   29    1.000   1.000   1.000
+Rem_Milicz_2015_2506201   32    1.000   1.000   1.000
+Rem_Milicz_2015_2604401   21    1.000   1.000   1.000
+Rem_Milicz_2015_2606301   21    0.952   0.952   0.952
+Rem_Milicz_2015_2705901   27    1.000   1.000   1.000
+Rem_Milicz_2015_2804101   89    0.910   0.910   0.978
+Rem_Milicz_2015_2805201   49    0.980   0.980   0.980
+Rem_Milicz_2015_2806501   33    0.818   0.818   0.909
+Rem_Milicz_2015_2905401   44    1.000   1.000   1.000
+Rem_Milicz_2015_2906401   35    1.000   1.000   1.000
+Rem_Milicz_2015_3103901   24    0.667   0.667   0.750
+Rem_Milicz_2015_3204501   68    0.941   0.941   1.000
+Rem_Milicz_2015_3404601   32    0.969   0.969   1.000
+Rem_Milicz_2015_3601901    8    0.750   0.750   1.000
+Rem_Milicz_2015_3605501    6    0.667   0.667   0.667
+Rem_Milicz_2015_3804301   21    0.333   0.333   0.952
+Rem_Milicz_2015_3805501   10    0.700   0.700   0.900
+Rem_Milicz_2015_3806801   34    0.941   0.941   1.000
+Rem_Milicz_2015_3902101   20    1.000   1.000   1.000
+Rem_Milicz_2015_4001301   24    0.000   0.000   0.000
+Rem_Milicz_2015_4005301    6    0.333   0.333   0.333
+Rem_Milicz_2015_4103201   34    0.029   0.029   0.088
+Rem_Milicz_2015_4104101    4    0.000   0.000   0.000
+Rem_Milicz_2015_4205101    2    0.500   0.500   0.500
+Rem_Milicz_2015_4206701   43    0.977   0.977   1.000
+Rem_Milicz_2015_4302601   19    1.000   1.000   1.000
+Rem_Milicz_2015_4303901   10    0.100   0.100   0.100
+Rem_Milicz_2015_4307201   33    0.818   0.818   0.818
+Rem_Milicz_2015_4502801   30    0.867   0.867   1.000
+Rem_Milicz_2015_4504701   14    0.214   0.214   0.357
+Rem_Milicz_2015_4603701   16    0.500   0.500   0.562
+Rem_Milicz_2015_4703801   26    0.423   0.423   0.769
+Rem_Milicz_2015_4903501   29    0.448   0.448   0.552
+Rem_Milicz_2015_5003201   19    0.526   0.526   0.895
+Rem_Milicz_2015_5102401   17    0.000   0.000   0.941
+Rem_Milicz_2015_5602301   18    0.167   0.167   0.167
+Rem_Milicz_2015_6900801    7    0.143   0.143   0.143
+Rem_Milicz_2015_7102401   39    0.744   0.744   0.846
+Rem_Milicz_2015_7700601   14    0.286   0.286   0.286
+Rem_Milicz_2015_7902301    5    0.800   0.800   1.000
+Rem_Milicz_2015_8300301    6    0.000   0.000   0.833

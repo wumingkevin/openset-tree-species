@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying manuscript."
+title: "Open-set tree-species recognition on FOR-species20K"
+abstract: >-
+  Pipeline, split definitions and result tables for an open-set evaluation of
+  individual-tree species recognition from proximal laser scanning point clouds.
+authors:
+  - family-names: Huang
+    given-names: Zaocai
+    affiliation: "School of Geomatics and Geoinformation, Guilin University of Technology, Guilin 541004, China"
+    email: wm2816768003@gmail.com
+version: 1.0.0
+date-released: 2026-11-20
+license: MIT

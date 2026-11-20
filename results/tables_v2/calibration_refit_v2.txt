@@ -1,0 +1,12 @@
+==============================================================
+CALIBRATION, refitted on the current model (S1, 5 folds)
+==============================================================
+quantity                     T = 1    fitted T
+T                             1.00        0.84
+NLL                         0.5456      0.5183
+ECE                         0.0569      0.0277
+accuracy                     0.870       0.870
+mean confidence              0.823       0.889
+AUROC (MSP)                 0.7424      0.7439
+
+per-fold fitted T: 0.84, 0.86, 0.82, 0.85, 0.85

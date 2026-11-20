@@ -1,0 +1,27 @@
+# large data and model artefacts (download or regenerate; not tracked)
+data/
+runs*/
+results/all*/
+results/figures*/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# large binary media
+*.npy
+*.npz
+*.laz
+*.las
+*.pt
+*.pth

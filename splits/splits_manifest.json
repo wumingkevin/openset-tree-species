@@ -1,0 +1,219 @@
+{
+  "S1_seed0": {
+    "path": "splits\\S1_seed0.json",
+    "kb": 482,
+    "n_unknown": 3220,
+    "n_known": 14487,
+    "unknown_species": [
+      "Crataegus_monogyna",
+      "Eucalyptus_miniata",
+      "Euonymus_europaeus",
+      "Picea_abies",
+      "Pinus_nigra",
+      "Quercus_rubra"
+    ]
+  },
+  "S1_seed1": {
+    "path": "splits\\S1_seed1.json",
+    "kb": 480,
+    "n_unknown": 3220,
+    "n_known": 14487,
+    "unknown_species": [
+      "Acer_saccharum",
+      "Eucalyptus_miniata",
+      "Fagus_sylvatica",
+      "Fraxinus_excelsior",
+      "Picea_glauca",
+      "Populus_deltoides"
+    ]
+  },
+  "S1_seed2": {
+    "path": "splits\\S1_seed2.json",
+    "kb": 475,
+    "n_unknown": 3220,
+    "n_known": 14487,
+    "unknown_species": [
+      "Acer_campestre",
+      "Betula_pendula",
+      "Crataegus_monogyna",
+      "Pinus_nigra",
+      "Populus_tremuloides",
+      "Tilia_cordata"
+    ]
+  },
+  "S2_Pinus": {
+    "path": "splits\\S2_pinus.json",
+    "kb": 283,
+    "n_unknown": 4450,
+    "n_known": 13257,
+    "unknown_species": [
+      "Pinus_contorta",
+      "Pinus_nigra",
+      "Pinus_pinaster",
+      "Pinus_radiata",
+      "Pinus_resinosa",
+      "Pinus_sylvestris"
+    ]
+  },
+  "S2_Quercus": {
+    "path": "splits\\S2_quercus.json",
+    "kb": 313,
+    "n_unknown": 2029,
+    "n_known": 15678,
+    "unknown_species": [
+      "Quercus_faginea",
+      "Quercus_ilex",
+      "Quercus_petraea",
+      "Quercus_robur",
+      "Quercus_rubra"
+    ]
+  },
+  "S2_Acer": {
+    "path": "splits\\S2_acer.json",
+    "kb": 311,
+    "n_unknown": 1926,
+    "n_known": 15781,
+    "unknown_species": [
+      "Acer_campestre",
+      "Acer_pseudoplatanus",
+      "Acer_saccharum"
+    ]
+  },
+  "S3_block0": {
+    "path": "splits\\S3_block0.json",
+    "kb": 288,
+    "n_unknown": 3560,
+    "n_known": 14147,
+    "unknown_species": [
+      "Acer_campestre",
+      "Betula_pendula",
+      "Carpinus_betulus",
+      "Crataegus_monogyna",
+      "Euonymus_europaeus",
+      "Fraxinus_angustifolia",
+      "Fraxinus_excelsior",
+      "Pinus_sylvestris",
+      "Quercus_robur",
+      "Tilia_cordata",
+      "Ulmus_laevis"
+    ]
+  },
+  "S3_block1": {
+    "path": "splits\\S3_block1.json",
+    "kb": 295,
+    "n_unknown": 3552,
+    "n_known": 14155,
+    "unknown_species": [
+      "Abies_alba",
+      "Acer_campestre",
+      "Acer_pseudoplatanus",
+      "Betula_pendula",
+      "Carpinus_betulus",
+      "Eucalyptus_miniata",
+      "Fagus_sylvatica",
+      "Fraxinus_excelsior",
+      "Larix_decidua",
+      "Picea_abies",
+      "Picea_glauca",
+      "Pinus_contorta",
+      "Pinus_sylvestris",
+      "Populus_deltoides",
+      "Populus_tremuloides",
+      "Prunus_avium",
+      "Pseudotsuga_menziesii",
+      "Quercus_petraea",
+      "Quercus_robur",
+      "Quercus_rubra"
+    ]
+  },
+  "S3_block2": {
+    "path": "splits\\S3_block2.json",
+    "kb": 294,
+    "n_unknown": 3531,
+    "n_known": 14176,
+    "unknown_species": [
+      "Abies_alba",
+      "Acer_pseudoplatanus",
+      "Betula_pendula",
+      "Carpinus_betulus",
+      "Fagus_sylvatica",
+      "Larix_decidua",
+      "Picea_abies",
+      "Pinus_nigra",
+      "Pinus_pinaster",
+      "Pinus_sylvestris",
+      "Pseudotsuga_menziesii",
+      "Quercus_faginea",
+      "Quercus_ilex",
+      "Quercus_petraea",
+      "Quercus_robur",
+      "Quercus_rubra"
+    ]
+  },
+  "S3_block3": {
+    "path": "splits\\S3_block3.json",
+    "kb": 293,
+    "n_unknown": 3520,
+    "n_known": 14187,
+    "unknown_species": [
+      "Abies_alba",
+      "Acer_campestre",
+      "Acer_pseudoplatanus",
+      "Betula_pendula",
+      "Corylus_avellana",
+      "Crataegus_monogyna",
+      "Fagus_sylvatica",
+      "Fraxinus_excelsior",
+      "Larix_decidua",
+      "Picea_abies",
+      "Pinus_radiata",
+      "Pinus_sylvestris",
+      "Quercus_robur"
+    ]
+  },
+  "S3_block4": {
+    "path": "splits\\S3_block4.json",
+    "kb": 290,
+    "n_unknown": 3544,
+    "n_known": 14163,
+    "unknown_species": [
+      "Abies_alba",
+      "Acer_saccharum",
+      "Betula_pendula",
+      "Fagus_sylvatica",
+      "Fraxinus_excelsior",
+      "Larix_decidua",
+      "Picea_abies",
+      "Pinus_resinosa",
+      "Pinus_sylvestris",
+      "Pseudotsuga_menziesii",
+      "Quercus_robur",
+      "Quercus_rubra"
+    ]
+  },
+  "S4_Fagaceae": {
+    "path": "splits\\S4_fagaceae.json",
+    "kb": 282,
+    "n_unknown": 4511,
+    "n_known": 13196,
+    "unknown_species": [
+      "Fagus_sylvatica",
+      "Quercus_faginea",
+      "Quercus_ilex",
+      "Quercus_petraea",
+      "Quercus_robur",
+      "Quercus_rubra"
+    ]
+  },
+  "S4_Betulaceae": {
+    "path": "splits\\S4_betulaceae.json",
+    "kb": 310,
+    "n_unknown": 2026,
+    "n_known": 15681,
+    "unknown_species": [
+      "Betula_pendula",
+      "Carpinus_betulus",
+      "Corylus_avellana"
+    ]
+  }
+}

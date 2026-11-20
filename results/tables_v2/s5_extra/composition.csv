@@ -1,0 +1,5 @@
+genus,n_unknown,n_species,n_campaigns,species
+Pinus,587,3,3,"Pinus_contorta, Pinus_radiata, Pinus_resinosa"
+Acer,110,1,1,Acer_saccharum
+Picea,164,1,1,Picea_glauca
+Quercus,654,3,9,"Quercus_ilex, Quercus_robur, Quercus_rubra"

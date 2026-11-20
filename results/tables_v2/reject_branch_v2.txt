@@ -1,0 +1,87 @@
+==================================================================================================
+A. SOURCE BLOCKS: acceptance split by whether the species has training support
+   threshold calibrated on that fold's VALIDATION knowns only (MSP)
+==================================================================================================
+block     unknowns  sp. seen  accept(seen)  sp. unseen  accept(unseen)      gap
+-------------------------------------------------------------------------------
+0             3560      1184         0.981        2376           0.965   +0.016
+1             3552      1977         0.889        1575           0.860   +0.029
+2             3528      1648         0.787        1880           0.693   +0.094
+3             3520      3361         0.914         159           0.799   +0.115
+4             3544      3266         0.962         278           0.939   +0.023
+
+==================================================================================================
+B. FALLBACK ON THE BRANCH THE TEXT DESCRIBES (S5, all folds, all detectors)
+   thr = 5th percentile of that fold's validation knowns
+==================================================================================================
+detector      foldset                  n  sp ok  genus ok  family ok
+--------------------------------------------------------------------
+msp              0rejected unk        82  0.000     0.366      0.659
+msp              0accepted unk       505  0.000     0.721      0.931
+msp              0rejected known     284  0.356     0.387      0.430
+
+energy           0rejected unk        80  0.000     0.487      0.725
+energy           0accepted unk       507  0.000     0.700      0.919
+energy           0rejected known     284  0.454     0.472      0.514
+
+mahalanobis      0rejected unk       146  0.000     0.390      0.678
+mahalanobis      0accepted unk       441  0.000     0.764      0.964
+mahalanobis      0rejected known     284  0.521     0.553      0.599
+
+knn              0rejected unk        86  0.000     0.291      0.640
+knn              0accepted unk       501  0.000     0.737      0.936
+knn              0rejected known     284  0.451     0.475      0.504
+
+msp              1rejected unk        66  0.000     0.303      0.636
+msp              1accepted unk       521  0.000     0.726      0.927
+msp              1rejected known     284  0.370     0.405      0.444
+
+energy           1rejected unk        67  0.000     0.373      0.701
+energy           1accepted unk       520  0.000     0.717      0.919
+energy           1rejected known     284  0.504     0.514      0.546
+
+mahalanobis      1rejected unk        85  0.000     0.282      0.529
+mahalanobis      1accepted unk       502  0.000     0.745      0.956
+mahalanobis      1rejected known     284  0.493     0.532      0.577
+
+knn              1rejected unk        55  0.000     0.218      0.527
+knn              1accepted unk       532  0.000     0.726      0.932
+knn              1rejected known     284  0.398     0.426      0.468
+
+msp              2rejected unk       106  0.000     0.396      0.717
+msp              2accepted unk       481  0.000     0.657      0.904
+msp              2rejected known     284  0.349     0.370      0.430
+
+energy           2rejected unk        91  0.000     0.473      0.714
+energy           2accepted unk       496  0.000     0.635      0.899
+energy           2rejected known     284  0.405     0.430      0.479
+
+mahalanobis      2rejected unk       134  0.000     0.291      0.649
+mahalanobis      2accepted unk       453  0.000     0.704      0.936
+mahalanobis      2rejected known     284  0.472     0.500      0.567
+
+knn              2rejected unk        78  0.000     0.205      0.705
+knn              2accepted unk       509  0.000     0.672      0.896
+knn              2rejected known     284  0.419     0.444      0.504
+
+==================================================================================================
+POOLED OVER THE THREE S5 FOLDS
+==================================================================================================
+detector     set                  n  sp ok  genus ok  family ok
+---------------------------------------------------------------
+energy       accepted unk      1523  0.000     0.685      0.913
+energy       rejected known     852  0.454     0.472      0.513
+energy       rejected unk       238  0.000     0.450      0.714
+knn          accepted unk      1542  0.000     0.711      0.922
+knn          rejected known     852  0.423     0.448      0.492
+knn          rejected unk       219  0.000     0.242      0.635
+mahalanobis  accepted unk      1396  0.000     0.738      0.952
+mahalanobis  rejected known     852  0.495     0.528      0.581
+mahalanobis  rejected unk       365  0.000     0.329      0.633
+msp          accepted unk      1507  0.000     0.702      0.921
+msp          rejected known     852  0.358     0.387      0.434
+msp          rejected unk       254  0.000     0.362      0.677
+
+'rejected known' rows show what a cascade would cost: how often the species the
+model would have emitted was already correct, which is the output a fallback has
+to beat rather than create.

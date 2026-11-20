@@ -1,0 +1,45 @@
+==============================================================================
+ZERO-SHOT TRANSFER: FOR-species20K  ->  district_Piensk
+==============================================================================
+trees evaluated        : 670
+model                  : multi-view ConvNeXt-Tiny, 33 classes, no adaptation
+species accuracy       : 0.819
+genus accuracy         : 0.821
+family accuracy        : 0.869
+
+for reference, the same model on its own in-distribution split: species 0.821,
+genus 0.840, family 0.858; and on source-holdout folds: species 0.157,
+genus 0.225.
+
+------------------------------------------------------------------------------
+BY SPECIES
+------------------------------------------------------------------------------
+true                      n  species   genus  family   most predicted
+Pinus_sylvestris        523    0.939   0.941   0.983   Pinus_sylvestris(491), Picea_abies(20)
+Betula_pendula           66    0.470   0.470   0.485   Betula_pendula(31), Eucalyptus_miniata(15)
+Picea_abies              28    0.821   0.821   1.000   Picea_abies(23), Pinus_sylvestris(4)
+Quercus_rubra            28    0.000   0.000   0.107   Acer_campestre(10), Ulmus_laevis(3)
+Quercus_robur            24    0.167   0.167   0.167   Acer_campestre(9), Fraxinus_angustifolia(5)
+Prunus_avium              1    0.000   0.000   1.000   Crataegus_monogyna(1)
+
+------------------------------------------------------------------------------
+BY PLOT
+------------------------------------------------------------------------------
+plot        n  species   genus  family
+Rem_Piensk_2016_0601402   24    1.000   1.000   1.000
+Rem_Piensk_2016_0801702   33    0.697   0.697   0.818
+Rem_Piensk_2016_0901202  102    0.902   0.902   0.971
+Rem_Piensk_2016_1102502   38    0.553   0.553   0.605
+Rem_Piensk_2016_1301202   36    0.972   0.972   0.972
+Rem_Piensk_2016_1302002   41    0.976   0.976   0.976
+Rem_Piensk_2016_1401302   70    0.971   0.971   0.986
+Rem_Piensk_2016_1501902   44    0.477   0.477   0.750
+Rem_Piensk_2016_1503502   24    0.292   0.292   0.333
+Rem_Piensk_2016_1601102   19    1.000   1.000   1.000
+Rem_Piensk_2016_1602102   33    0.909   0.909   0.970
+Rem_Piensk_2016_1700702   40    1.000   1.000   1.000
+Rem_Piensk_2016_1701502   27    0.815   0.815   0.889
+Rem_Piensk_2016_1702302   32    0.438   0.438   0.438
+Rem_Piensk_2016_1802502   48    0.958   0.979   0.979
+Rem_Piensk_2016_1804502   14    0.929   0.929   0.929
+Rem_Piensk_2016_1902802   45    0.756   0.756   0.778
