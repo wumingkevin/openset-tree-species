@@ -2,8 +2,8 @@
 
 Companion code, split definitions and result tables for the manuscript
 
-> **Closed-set accuracy does not establish deployability: open-set evaluation of
-> individual-tree species recognition from point clouds**
+> **Open-set evaluation of source transfer and taxonomic fallback in
+> individual-tree species recognition**
 
 The repository reproduces the numbers, tables and figures of the manuscript and its
 supplementary material from the public FOR-species20K development set plus four
